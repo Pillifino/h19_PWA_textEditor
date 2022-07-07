@@ -23,6 +23,10 @@ module.exports = () => {
         template: "./index.html",
         title: "Webpack Plugin",
       }),
+        // inserts workbox service worker into dist directory
+      new InjectManifest({
+        swDest: './dist/sw.js'
+      })
     ],
 
     module: {
