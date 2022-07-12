@@ -26,7 +26,7 @@ module.exports = () => {
       // inserts workbox service worker into dist directory
       new InjectManifest({
         swSrc: "./src-sw.js",
-        swDest: "./dist/sw.js",
+        swDest: "src-sw.js",
       }),
 
       // Creates a manifest.json file.
